@@ -183,6 +183,16 @@ Route::group([
         ->names('check.tracks');
 
     /**
+     * 流程审批
+     */
+    $router->resource('/approval/records', 'ApprovalRecordController')
+        ->names('approval.records');
+    $router->resource('/approval/tracks', 'ApprovalTrackController')
+        ->names('approval.tracks');
+    $router->resource('/approval/histories', 'ApprovalHistoryController')
+        ->names('approval.histories');
+
+    /**
      * 故障维护.
      */
     $router->resource('/maintenance/records', 'MaintenanceRecordController')

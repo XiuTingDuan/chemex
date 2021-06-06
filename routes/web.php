@@ -10,3 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+\Illuminate\Support\Facades\Route::get('/test', [\App\Http\Controllers\TestController::class, 'test']);

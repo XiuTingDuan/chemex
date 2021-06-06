@@ -10,9 +10,14 @@ return [
         'name' => '名称',
         'description' => '描述',
         'role' => [
-            'name' => '审核角色'
+            'name' => '角色'
         ],
         'approval_id' => '审批',
-        'role_id' => '审核角色'
+        'role_id' => '角色',
+        'user_id' => '用户',
+        'department_user_id' => '上级',
+        'user' => [
+            'name' => '用户'
+        ]
     ],
 ];
