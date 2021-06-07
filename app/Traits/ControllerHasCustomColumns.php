@@ -48,7 +48,7 @@ trait ControllerHasCustomColumns
                 default:
                     $form->text($custom_column->name, $custom_column->nick_name);
             }
-            if ($custom_column->is_nullable == 1) {
+            if ($custom_column->is_nullable == 0) {
                 $form->field($custom_column->name)->required();
             }
         }

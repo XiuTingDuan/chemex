@@ -281,7 +281,7 @@ trait ControllerHasColumnSort
                                 if ($type == 'select') {
                                     $type = 'string';
                                 }
-                                if ($custom_column->is_nullable == 1 || ($type == 'date' || $type == 'dateTime' || $type == 'select')) {
+                                if ($custom_column->is_nullable == 1 || $type == 'date' || $type == 'dateTime' || $type == 'select') {
                                     $table->$type($custom_column->name)->nullable();
                                 } else {
                                     $table->$type($custom_column->name)->default(0);
